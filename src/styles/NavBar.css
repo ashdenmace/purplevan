@@ -1,0 +1,25 @@
+.nav-container {
+  background-color: #9b4dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+.nav-route {
+  display: flex;
+  font-size: 1.3rem;
+  margin: 1.3rem
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-route {
+        font-size: 1rem;
+        margin: 0.3rem;
+    }
+  }

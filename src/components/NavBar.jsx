@@ -1,17 +1,15 @@
-function NavBar () {
+import "../styles/NavBar.css";
 
-    const styles = {
-        // background: 'linear-gradient(to top, #430082, #9b4dff)',
-        backgroundColor: "#9b4dff"
-    }
+function NavBar () {
+   
     return (
         <>
-        <div className="d-flex flex-row justify-content-center align-items-center text-white py-3" style={styles}>
-            <p className="mx-3">Home</p>
-            <p className="mx-3">About</p>
-            <p className="mx-3">Mechanical History</p>
-            <p className="mx-3">Contact</p>
-        </div>
+            <div className="nav-container">
+                <p className="nav-route">Home</p>
+                <p className="nav-route">Photos</p>
+                <p className="nav-route">Mechanical History</p>
+                <p className="nav-route">Contact</p>
+            </div>
         </>
     )
 }
