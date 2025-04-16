@@ -1,9 +1,8 @@
 .diagonal-box {
     flex: 1;
-    background: linear-gradient(100deg, #ffffff 50%, #9b4dff 0%);
+    background: linear-gradient(140deg, #ffeddc 60%, #9b4dff 0%);
   }
   
-  /* Fullscreen hero section */
   .hero-section {
     height: 100vh;
     background-size: cover;
@@ -17,7 +16,6 @@
     padding-top: 15vh; 
   }
   
-  /* Dark overlay to improve text readability */
   .hero-overlay {
     position: absolute;
     top: 0;
@@ -29,7 +27,6 @@
     z-index: 1;
   }
   
-  /* Title text */
   .hero-title {
     color: white;
     font-size: 4rem;
@@ -53,16 +50,36 @@
     cursor: pointer;
   }
   
-  /* About section */
+  /* About + Picture section */
   .about-section {
     background-color: white;
     padding: 4rem 1rem;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .about-container {
-    max-width: 800px;
-    margin: 0 auto;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #9b4dff;
+    color: white;
+  }
+
+  .pic-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .pic-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
   
   .about-title {
@@ -75,4 +92,12 @@
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .pic-container,
+    .about-container {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }

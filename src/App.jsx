@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import "./styles/App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Welcome from "./screens/Welcome";
-import Banner from "./components/Banner";
+import NavBar from "./components/NavBar";
 
 function App() {
 
   return (
     <>
-      <Banner />
+      <NavBar />
       <Welcome />
     </>
   )

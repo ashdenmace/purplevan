@@ -1,6 +1,6 @@
 import bgImage from "../../images/background.jpg";
 import { useRef } from "react";
-import "./Welcome.css";
+import "../styles/Welcome.css";
 
 function WelcomePage() {
   const aboutSectionRef = useRef(null);
@@ -24,7 +24,10 @@ function WelcomePage() {
       </section>
 
       {/* About Section */}
-      <section ref={aboutSectionRef} className="about-section  diagonal-box">
+      <section ref={aboutSectionRef} className="about-section diagonal-box">
+        <div className="pic-container">
+          <img src={"../../images/desert.jpg"}></img>
+        </div>
         <div className="about-container">
           <h2 className="about-title">About the Van</h2>
           <p className="about-paragraph">
