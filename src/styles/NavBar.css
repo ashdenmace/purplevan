@@ -4,14 +4,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  color: white;
 }
 
 .nav-route {
   display: flex;
+  text-decoration: none;
+  color: white;
   font-size: 1.3rem;
   margin: 1.3rem
 }
+
+.nav-route:hover {
+    color: #ffe600;
+  }
 
 @media (max-width: 768px) {
     .nav-container {

@@ -2,7 +2,7 @@ import bgImage from "../../images/background.jpg";
 import { useRef } from "react";
 import "../styles/Welcome.css";
 
-function WelcomePage() {
+function Welcome() {
   const aboutSectionRef = useRef(null);
 
   const scrollToAbout = () => {
@@ -67,4 +67,4 @@ function WelcomePage() {
   );
 }
 
-export default WelcomePage;
+export default Welcome;
