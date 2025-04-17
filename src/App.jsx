@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Welcome from "./screens/Welcome";
 import MechanicalHistory from "./screens/MechanicalHistory";
 import PhotoShowcase from "./screens/PhotoShowcase";
+import Contact from "./screens/Contact";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Welcome/>} />
           <Route path="/history" element={<MechanicalHistory />} />
           <Route path="/photos" element={<PhotoShowcase/>}/>
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </>

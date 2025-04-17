@@ -33,7 +33,7 @@ function Welcome() {
           <p className="about-paragraph">
             Purple Haze is a van for fun and adventures! People adore her and
             want their photo taken with her. She loves being the center of
-            attention in holiday parades like 4 th of July, Winder holidays, and
+            attention in holiday parades like the 4th of July, Winder holidays, and
             Trunk or Treat. She likes to go to Farmers markets, set up her
             tables, and sell baked goods. Her magnetic daises dress her up for
             the high way honking!
