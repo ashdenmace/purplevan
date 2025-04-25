@@ -94,6 +94,17 @@
     line-height: 1.6;
   }
 
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 768px) {
     .pic-container,
     .about-container {

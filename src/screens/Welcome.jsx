@@ -17,8 +17,8 @@ function Welcome() {
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="hero-overlay"></div>
-        <h1 className="hero-title">Purple Haze the Van</h1>
-        <button className="scroll-button" onClick={scrollToAbout}>
+        <h1 className="hero-title fade-in">Purple Haze the Van</h1>
+        <button className="scroll-button fade-in" onClick={scrollToAbout}>
           Learn More
         </button>
       </section>

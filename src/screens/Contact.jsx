@@ -3,10 +3,13 @@ import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <>
-      <h2>This will be the separate contact page</h2>
+      <h2>Contact Us</h2>
       {/* ContactForm will be a seperate component, 
             because I plan to have the form on the bottom 
-            of Welcome Page as well. */}
+            of Welcome Page as well. 
+            AWS SES 
+            AWS S3 BUCKET
+            */}
       <ContactForm />
     </>
   );

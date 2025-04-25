@@ -1,11 +1,11 @@
 .history-container {
-    
+    background-color: #ffeddc;
     padding: 1.2rem;
 }
 
 .title {
     background-color: #9b4dff;
-    color: white;
+    color: #ffeddc;
     text-align: center;
 }
 

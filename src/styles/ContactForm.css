@@ -1,0 +1,6 @@
+.contactform-container {
+   flex: 1;
+   padding: 2rem;
+   background-color: rgba(81, 3, 81, 0.048);
+   justify-content: center;
+}
