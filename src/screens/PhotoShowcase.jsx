@@ -12,7 +12,10 @@ function PhotoShowcase() {
   return (
     <>
       <div>
-        <h1 className="fade-in">Photos</h1>
+        <div className="photo-title">
+          <h1 className="fade-in">Photos</h1>
+          <h2 className="fade-in">Including Haze being worked on</h2>
+        </div>
         <Lightbox
           index={index}
           open={index >= 0}
