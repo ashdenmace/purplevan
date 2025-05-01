@@ -63,6 +63,51 @@ function Welcome() {
           </p>
         </div>
       </section>
+      <section>
+        <div className="trip-enhancements">
+          <h2>Trip Enhancements Included with Haze</h2>
+
+          <h3>Cooking & Dining</h3>
+          <ul>
+            <li>Three roll-up camp tables for cooking, eating, and supplies</li>
+            <li>Two-burner Coleman stove with propane and a single-burner butane stove</li>
+            <li>Plastic dishes, bowls, and cooking utensils</li>
+            <li>White water hose for filling tanks and an extension cord for external power</li>
+            <li>Small cooler sized to fit between the two front seats</li>
+          </ul>
+
+          <h3>Comfort & Privacy</h3>
+          <ul>
+            <li>Reflectix window covers and matching curtains with earth magnets for easy setup and removal</li>
+            <li>Front and rear divider curtains for nighttime privacy</li>
+            <li>Large EZ-Up side awning with room walls for extra space or bad weather</li>
+          </ul>
+
+          <h3>Lighting & Power</h3>
+          <ul>
+            <li>Bluetti solar generator with display screen</li>
+            <li>Battery-operated light bars with Velcro mounting and remotes</li>
+            <li>Solar-powered exterior lights with magnetic attachment for night camping</li>
+          </ul>
+
+          <h3>Van Accessories</h3>
+          <ul>
+            <li>Heavy-duty wood entry step</li>
+            <li>Small kitchen ladder for upper bunk access, extra seating, or reaching high spaces</li>
+            <li>Chrome table leg and removable interior table</li>
+            <li>Two folding chairs (optional)</li>
+            <li>Sand carpets for outside use</li>
+          </ul>
+
+          <h3>Vehicle Equipment</h3>
+          <ul>
+            <li>Library of over 10 Volkswagen manuals and books</li>
+            <li>New radio with remote control</li>
+            <li>Two boxes of spare parts (light bulbs, cables, oil and fuel filters)</li>
+            <li>Slow-moving vehicle sign for mountain driving</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 }

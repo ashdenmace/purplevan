@@ -1,6 +1,50 @@
-.contactform-container {
+/* .contactform {
    flex: 1;
    padding: 2rem;
    background-color: rgba(81, 3, 81, 0.048);
    justify-content: center;
-}
+   min-width: 30%;
+} */
+
+.contactform {
+   flex: 1;
+   background: rgba(255, 255, 255, 0.8); /* slight white transparency */
+   padding: 2rem;
+   border-radius: 12px;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+   backdrop-filter: blur(6px);
+   max-width: 500px;
+ }
+ 
+ .contactform input,
+ .contactform textarea {
+   width: 100%;
+   padding: 0.75rem;
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   font-size: 1rem;
+ }
+ 
+ .contactform input:focus,
+ .contactform textarea:focus {
+   border-color: #007BFF;
+   outline: none;
+ }
+ 
+ .contactform button {
+   width: 100%;
+   padding: 0.75rem;
+   background-color: #007BFF;
+   border: none;
+   border-radius: 8px;
+   color: white;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .contactform button:hover {
+   background-color: #0056b3;
+ }
+ 

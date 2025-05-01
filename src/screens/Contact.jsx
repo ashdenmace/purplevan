@@ -1,16 +1,20 @@
 import ContactForm from "../components/ContactForm";
+import "../styles/Contact.css";
 
 function Contact() {
   return (
     <>
       <h2>Contact Us</h2>
-      {/* ContactForm will be a seperate component, 
-            because I plan to have the form on the bottom 
-            of Welcome Page as well. 
-            AWS SES 
-            AWS S3 BUCKET
-            */}
-      <ContactForm />
+      {/* AWS SES 
+          AWS S3 BUCKET
+      */}
+      <div className="contact-container">
+        <ContactForm />
+        <div className="photo-container">
+          <img className="contact-photo" src="https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20191008_115751.jpg"></img>
+        </div>
+      </div>
+      
     </>
   );
 }

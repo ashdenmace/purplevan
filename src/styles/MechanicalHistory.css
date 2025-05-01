@@ -1,4 +1,4 @@
-.history-container {
+/* .history-container {
     background-color: #ffeddc;
     padding: 1.2rem;
 }
@@ -10,6 +10,77 @@
 }
 
 p {
-    /* color: rgb(0, 0, 0); */
+    color: rgb(0, 0, 0);
     margin: 0;
-}
+} */
+
+/* Container wrapping image and document */
+.history-wrapper {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Background image container */
+  .history-image {
+    width: 50%;
+    background-image: url('https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20190925_133630.jpg'); /* Update path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Document container */
+  .history-container {
+    width: 60%;
+    margin-left: -15%; /* Overlaps 25% of the image */
+    background-color: rgba(255, 255, 255, 0.95); /* Transparent "paper" look */
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: relative;
+    backdrop-filter: blur(2px);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  
+  /* Optional title styling */
+  .title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Sections for clearer visual breaks */
+  .history-container h4,
+  .history-container h5,
+  .history-container h6 {
+    margin-top: 2rem;
+    font-weight: 600;
+  }
+  
+  .history-container p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .history-wrapper {
+      flex-direction: column;
+    }
+  
+    .history-image,
+    .history-container {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .history-container {
+      padding: 1rem;
+      max-height: none;
+    }
+  }

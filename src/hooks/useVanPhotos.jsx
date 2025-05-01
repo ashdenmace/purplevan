@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+// FOR DEPLOY MAKE SURE TO SET THIS UP IN SECRET ENVIRONMENT // 
+
 export default function useVanPhotos() {
   const [photos, setPhotos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

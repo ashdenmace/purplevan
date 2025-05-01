@@ -1,0 +1,32 @@
+/* .contact-container {
+  display: flex;
+  border: 12px red solid;
+}
+
+.contact-photo {
+  flex: 1;
+} */
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap; /* In case on mobile */
+}
+
+.photo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
