@@ -1,86 +1,57 @@
-/* .history-container {
-    background-color: #ffeddc;
-    padding: 1.2rem;
+.page-layout {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
 }
 
-.title {
-    background-color: #9b4dff;
-    color: #ffeddc;
-    text-align: center;
+.image-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-p {
-    color: rgb(0, 0, 0);
-    margin: 0;
-} */
+.image-section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
 
-/* Container wrapping image and document */
-.history-wrapper {
-    position: relative;
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    min-height: 100vh;
+.image-section img.active {
+  opacity: 1;
+}
+
+.text-section {
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 800px;
+  background: white;
+  border: 5px solid rgba(79, 0, 116, 0);
+  border-radius: 8px;
+  z-index: 1;
+  position: relative;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 760px) {
+  .image-section {
+    display: none;
   }
-  
-  /* Background image container */
-  .history-image {
-    width: 50%;
-    background-image: url('https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20190925_133630.jpg'); /* Update path */
-    background-size: cover;
-    background-position: center;
+
+  .page-layout {
+    padding: 0.5rem;
   }
-  
-  /* Document container */
-  .history-container {
-    width: 60%;
-    margin-left: -15%; /* Overlaps 25% of the image */
-    background-color: rgba(255, 255, 255, 0.95); /* Transparent "paper" look */
-    padding: 2rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    position: relative;
-    backdrop-filter: blur(2px);
-    font-family: 'Georgia', serif;
-    line-height: 1.6;
-    overflow-y: auto;
-    max-height: 100vh;
+
+  .text-section {
+    padding: 0.5rem;
+    box-shadow: 0 0 8px rgba(61, 0, 71, 0.49);
   }
-  
-  /* Optional title styling */
-  .title h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  /* Sections for clearer visual breaks */
-  .history-container h4,
-  .history-container h5,
-  .history-container h6 {
-    margin-top: 2rem;
-    font-weight: 600;
-  }
-  
-  .history-container p {
-    margin: 0.25rem 0;
-    font-size: 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .history-wrapper {
-      flex-direction: column;
-    }
-  
-    .history-image,
-    .history-container {
-      width: 100%;
-      margin-left: 0;
-    }
-  
-    .history-container {
-      padding: 1rem;
-      max-height: none;
-    }
-  }
+}

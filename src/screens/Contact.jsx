@@ -5,9 +5,6 @@ function Contact() {
   return (
     <>
       <h2>Contact Us</h2>
-      {/* AWS SES 
-          AWS S3 BUCKET
-      */}
       <div className="contact-container">
         <ContactForm />
         <div className="photo-container">

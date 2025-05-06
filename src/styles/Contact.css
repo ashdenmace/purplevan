@@ -1,12 +1,3 @@
-/* .contact-container {
-  display: flex;
-  border: 12px red solid;
-}
-
-.contact-photo {
-  flex: 1;
-} */
-
 .contact-container {
   display: flex;
   align-items: center;
@@ -20,7 +11,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .contact-photo {
