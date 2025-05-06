@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 2rem;
   gap: 2rem;
-  flex-wrap: wrap; /* In case on mobile */
 }
 
 .photo-container {
@@ -20,4 +20,30 @@
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-text-container {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem;
+  }
+
+  .photo-container {
+    order: 1;
+    padding: 0;
+  }
+
+  .form-text-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    order: 2;
+  }
+
+  .contact-photo {
+  }
 }

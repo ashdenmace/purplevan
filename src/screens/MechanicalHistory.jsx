@@ -21,6 +21,7 @@ function MechanicalHistory() {
   }, []);
 
   return (
+  <>
     <div className="page-layout">
       <div className="image-section">
         {images.map((src, index) => (
@@ -109,6 +110,7 @@ function MechanicalHistory() {
         <p>Replaced: light bulbs, fuel filter, carburetor, heater hose</p>
       </div>
     </div>
+    </>
   );
 }
 

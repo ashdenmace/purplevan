@@ -10,6 +10,7 @@ function ContactForm() {
     message: "",
     mobile: "",
   });
+  const [error, setError] = useState(null)
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -21,8 +22,16 @@ function ContactForm() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    const { fullName, email, message } = form
+    
+    if(!fullName || !email || !message){
+      setError("You must include your name, email and message")
+      return;
+    }
+    if(error) return null;
+
     emailjs
-    //ENV THESE TWO STRINGS;
+    //ENV THESE THREE STRINGS;
       .send("service_euwr4wd", "template_mlglzz8", form, {
         publicKey: "fi_CJNSdN-R_m6tOb",
       })
@@ -41,8 +50,8 @@ function ContactForm() {
     <>
       <div className="contactform">
         <form onSubmit={onSubmit}>
+          {error && <div className="error-bubble">{error}</div>}
           <div className="mb-3">
-            {/* <label for="fullname" className="form-label">Full Name</label> */}
             <input
               type="text"
               className="form-control"
@@ -53,7 +62,6 @@ function ContactForm() {
             />
           </div>
           <div className="mb-3">
-            {/* <label for="email" className="form-label">Email address</label> */}
             <input
               type="email"
               className="form-control"
@@ -63,7 +71,6 @@ function ContactForm() {
             />
           </div>
           <div className="mb-3">
-            {/* <label for="email" className="form-label">Email address</label> */}
             <input
               type="mobile"
               className="form-control"
@@ -74,7 +81,6 @@ function ContactForm() {
             />
           </div>
           <div className="mb-3">
-            {/* <label for="message" className="form-label"></label> */}
             <textarea
               className="form-control"
               id="message"

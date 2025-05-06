@@ -1,6 +1,6 @@
 .diagonal-box {
     flex: 1;
-    background: linear-gradient(140deg, #ffeddc 60%, #9b4dff 0%);
+    background: linear-gradient(140deg, #ffffff 60%, #9b4dff 0%);
   }
   
   .hero-section {
@@ -67,7 +67,7 @@
     background-color: #9b4dff;
     color: white;
   }
-
+/* 6e02c7 */
   .pic-container {
     flex: 0 0 50%;
     max-width: 50%;
