@@ -28,7 +28,8 @@ function ContactForm() {
       setError("You must include your name, email and message")
       return;
     }
-    if(error) return null;
+
+    setError(null);
 
     emailjs
     //ENV THESE THREE STRINGS;
@@ -37,10 +38,16 @@ function ContactForm() {
       })
       .then(
         () => {
-          console.log("SUCCESS email was sent");
+          setError("SUCCESS email was sent");
+          setForm({
+            fullName: "",
+            email: "",
+            message: "",
+            mobile: "",
+          });
         },
-        (error) => {
-          console.log("FAILED to send email", error);
+        (err) => {
+          setError(`FAILED to send email: ${err}`);
         }
       );
   };
