@@ -1,7 +1,7 @@
-.diagonal-box {
+/* .diagonal-box {
     flex: 1;
     background: linear-gradient(140deg, #ffffff 60%, #9b4dff 0%);
-  }
+  } */
   
   .hero-section {
     height: 100vh;
@@ -67,7 +67,7 @@
     background-color: #9b4dff;
     color: white;
   }
-/* 6e02c7 */
+/* 6e02c7  */
   .pic-container {
     flex: 0 0 50%;
     max-width: 50%;
@@ -115,3 +115,31 @@
 
 
 /* This is for the parts included section */
+
+.trip-enhancements-section {
+  background-color: #8528ff6f;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+.trip-enhancements {
+  padding: 1rem;
+  flex: 1;
+  
+}
+
+.th-photo-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  
+}
+
+.th-photo-container img{
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

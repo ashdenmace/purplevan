@@ -1,5 +1,7 @@
 import bgImage from "../../images/background.jpg";
 import { useRef } from "react";
+
+import ImageSlider from "../components/ImageSlider";
 import "../styles/Welcome.css";
 
 function Welcome() {
@@ -8,6 +10,8 @@ function Welcome() {
   const scrollToAbout = () => {
     aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const thPhotos = ["https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20220131_125419.jpg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F73191.jpeg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1664118456598.jpg"]
 
   return (
     <div>
@@ -63,7 +67,7 @@ function Welcome() {
           </p>
         </div>
       </section>
-      <section>
+      <section className="trip-enhancements-section">
         <div className="trip-enhancements">
           <h2>Trip Enhancements Included with Haze</h2>
 
@@ -106,6 +110,9 @@ function Welcome() {
             <li>Two boxes of spare parts (light bulbs, cables, oil and fuel filters)</li>
             <li>Slow-moving vehicle sign for mountain driving</li>
           </ul>
+        </div>
+        <div className="th-photo-container">
+          <ImageSlider images={thPhotos}/>
         </div>
       </section>
     </div>
