@@ -53,39 +53,33 @@
   /* About + Picture section */
   .about-section {
     background-color: white;
-    padding: 4rem 1rem;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
   }
   
   .about-container {
-    flex: 0 0 50%;
+    flex: 1;
     max-width: 50%;
     padding: 1rem;
     box-sizing: border-box;
     background-color: #9b4dff;
     color: white;
   }
-/* 6e02c7  */
-  .pic-container {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 1rem;
-    box-sizing: border-box;
+
+  .about-photo-container {
+    flex: 1;
   }
 
-  .pic-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  .about-photo-container img {
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
   
   .about-title {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .about-paragraph {
@@ -105,13 +99,19 @@
     }
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+    .trip-enhancements-section {
+      flex-direction: column;
+    }
     .pic-container,
     .about-container {
       flex: 0 0 100%;
       max-width: 100%;
     }
-  }
+  } */
 
 
 /* This is for the parts included section */
@@ -120,25 +120,28 @@
   background-color: #8528ff6f;
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0.5rem;
 }
 
 .trip-enhancements {
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1;
   
 }
 
-.th-photo-container {
+.te-photo-container {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
   min-width: 300px;
+  padding: 2rem;
   
 }
 
-.th-photo-container img{
+.te-photo-container img{
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);

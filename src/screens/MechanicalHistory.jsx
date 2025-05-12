@@ -15,7 +15,7 @@ function MechanicalHistory() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 6000); // change every 6 seconds
+    }, 6000); 
 
     return () => clearInterval(interval);
   }, []);

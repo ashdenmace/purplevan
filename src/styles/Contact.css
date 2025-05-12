@@ -1,3 +1,11 @@
+.form-text-container h2 {
+  color: rgb(122, 0, 155);
+}
+
+.form-text-container p {
+  color: rgb(122, 0, 155);
+  font-size: 1.3rem;
+}
 .contact-container {
   display: flex;
   align-items: center;
@@ -42,8 +50,5 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     order: 2;
-  }
-
-  .contact-photo {
   }
 }

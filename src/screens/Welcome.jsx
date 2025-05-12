@@ -11,6 +11,7 @@ function Welcome() {
     aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const aboutPhotos = [];
   const thPhotos = ["https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20220131_125419.jpg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F73191.jpeg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1664118456598.jpg"]
 
   return (
@@ -26,11 +27,11 @@ function Welcome() {
           Learn More
         </button>
       </section>
-
+      <hr></hr>
       {/* About Section */}
       <section ref={aboutSectionRef} className="about-section diagonal-box">
-        <div className="pic-container">
-          <img src={"../../images/desert.jpg"}></img>
+        <div className="about-photo-container">
+          <ImageSlider images={thPhotos} interval={6000}/>
         </div>
         <div className="about-container">
           <h2 className="about-title">About the Van</h2>
@@ -67,6 +68,7 @@ function Welcome() {
           </p>
         </div>
       </section>
+      <hr></hr>
       <section className="trip-enhancements-section">
         <div className="trip-enhancements">
           <h2>Trip Enhancements Included with Haze</h2>
@@ -111,7 +113,7 @@ function Welcome() {
             <li>Slow-moving vehicle sign for mountain driving</li>
           </ul>
         </div>
-        <div className="th-photo-container">
+        <div className="te-photo-container">
           <ImageSlider images={thPhotos}/>
         </div>
       </section>
