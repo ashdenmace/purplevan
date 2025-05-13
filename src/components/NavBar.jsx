@@ -6,16 +6,16 @@ function NavBar() {
     <>
       <div className="nav-container">
         <Link className="nav-route" to="/">
-          Home{" "}
+          Home
         </Link>
-        <Link className="nav-route" to="/photos">
-          Photos{" "}
+        <Link className="nav-route" to="/albums">
+          Photos
         </Link>
         <Link className="nav-route" to="/history">
-          Mechanical History{" "}
+          Mechanical History
         </Link>
         <Link className="nav-route" to="/contact">
-          Contact{" "}
+          Contact
         </Link>
       </div>
     </>

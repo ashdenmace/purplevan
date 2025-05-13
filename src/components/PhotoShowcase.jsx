@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import useVanPhotos from "../hooks/useVanPhotos";
 import "../styles/photoshowcase.css";
 
-function PhotoShowcase() {
+function PhotoShowcase({ title = "", subtitle = "" }) {
   const { photos, error, isLoading } = useVanPhotos();
   const [index, setIndex] = useState();
 
@@ -13,8 +13,8 @@ function PhotoShowcase() {
     <>
       <div>
         <div className="photo-title">
-          <h1 className="fade-in">Photos</h1>
-          <h2 className="fade-in">Including Haze being worked on</h2>
+          <h1 className="fade-in">{title}</h1>
+          <h2 className="fade-in">{subtitle}</h2>
         </div>
         <Lightbox
           index={index}

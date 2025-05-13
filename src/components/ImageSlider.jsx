@@ -4,6 +4,10 @@ import "../styles/ImageSlider.css";
 function ImageSlider({ images = [], interval = 4000 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  if (!images || images.length === 0) {
+    return <p>No images found</p>;
+  }
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) =>

@@ -11,8 +11,8 @@ function Welcome() {
     aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const aboutPhotos = [];
-  const thPhotos = ["https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20220131_125419.jpg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F73191.jpeg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1664118456598.jpg"]
+  const aboutPhotos = ["https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20210530_104901.jpg","https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20220131_125419.jpg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F73191.jpeg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1664118456598.jpg"]
+  const thPhotos = ["https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1720133851098.jpg", "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20230704_083829.jpg", ];
 
   return (
     <div>
@@ -29,9 +29,9 @@ function Welcome() {
       </section>
       <hr></hr>
       {/* About Section */}
-      <section ref={aboutSectionRef} className="about-section diagonal-box">
+      <section ref={aboutSectionRef} className="about-section">
         <div className="about-photo-container">
-          <ImageSlider images={thPhotos} interval={6000}/>
+          <ImageSlider images={aboutPhotos} interval={6000}/>
         </div>
         <div className="about-container">
           <h2 className="about-title">About the Van</h2>
