@@ -17,7 +17,7 @@ export default function useVanPhotos() {
         setPhotos(data);
         setIsLoading(false);
       } catch (err) {
-        setError(err.messag || "Failed to fetch photos");
+        setError(err.message || "Failed to fetch photos");
       }
     };
     loadPhotos();

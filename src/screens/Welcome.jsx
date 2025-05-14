@@ -69,6 +69,7 @@ function Welcome() {
         </div>
       </section>
       <hr></hr>
+      {/* Trip Enhancements  */}
       <section className="trip-enhancements-section">
         <div className="trip-enhancements">
           <h2>Trip Enhancements Included with Haze</h2>
@@ -91,7 +92,7 @@ function Welcome() {
 
           <h3>Lighting & Power</h3>
           <ul>
-            <li>Bluetti solar generator with display screen</li>
+            <li>Bluetti solar generator with solar panel</li>
             <li>Battery-operated light bars with Velcro mounting and remotes</li>
             <li>Solar-powered exterior lights with magnetic attachment for night camping</li>
           </ul>

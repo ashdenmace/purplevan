@@ -3,7 +3,7 @@ import PhotoShowcase from "../components/PhotoShowcase";
 function BeforeAlbum() {
   return (
     <>
-      <PhotoShowcase title="Before the auto work" subtitle="and during" />
+      <PhotoShowcase title="Auto work" />
     </>
   );
 }

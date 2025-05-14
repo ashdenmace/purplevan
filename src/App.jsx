@@ -11,6 +11,7 @@ import Albums from "./screens/Albums";
 import CurrentAlbum from "./screens/CurrentAlbum";
 import CelebrationsAlbum from './screens/CelebrationsAlbum';
 import BeforeAlbum from "./screens/BeforeAlbum";
+import NotFound from "./screens/NotFound";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/current" element={<CurrentAlbum />} />
           <Route path="/auto-work" element={<BeforeAlbum />} />
           <Route path="/celebrations" element={<CelebrationsAlbum />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

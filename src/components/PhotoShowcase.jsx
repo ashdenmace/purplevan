@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -15,6 +16,9 @@ function PhotoShowcase({ title = "", subtitle = "" }) {
         <div className="photo-title">
           <h1 className="fade-in">{title}</h1>
           <h2 className="fade-in">{subtitle}</h2>
+          <Link to="/albums">
+            <button className="fade-in btn btn-primary">Albums</button>
+          </Link>
         </div>
         <Lightbox
           index={index}

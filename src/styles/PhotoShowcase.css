@@ -16,6 +16,17 @@
 
 .photo-title {
   padding: 1rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #6e02c7;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #5b02c7;
+  border-color: #8e44ad;
 }
 
 .fade-in {
