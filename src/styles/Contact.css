@@ -31,7 +31,10 @@
 }
 
 .form-text-container {
+  flex: 1; 
+  min-width: 280px; 
   max-width: 600px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
