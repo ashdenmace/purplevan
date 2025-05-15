@@ -1,12 +1,23 @@
-# React + Vite
+# React Website for VW Van Sale
+This is a website showcasing a 1978 VW Van named "Haze". Haze's owner would like to sell their van and wanted a website with all the details and photos on it.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- A contact page that features a form that will format and send an email to the owner, intended for users to express their interest in purchasing the van using EmailJS. 
+- A detailed page of a Mechanical History document and background pictures.
+- An Albums page, that includes 3 albums of the van in its current state, auto work, and celebrations that it's been apart of.
+    - Using Amazon S3 Bucket to host 140+ images.
+    - Using Amazon Lambda and API Gateway to create an array full of an album's images for the frontend to display.
+    - Each album can be viewed and navigated in a lightbox
+- A home page showcasing some pictures, including some details about the van and accessories included.
+- Not Found page if a user tries to visit a route that doesn't exist.
 
-Currently, two official plugins are available:
+## Technology Used
+- React and Vite
+- Javascript
+- CSS (little bit of bootstrap)
+- Node.js
+- Amazon S3
+- Amazon Lambda
+- Amazon API Gateway
+- EmailJs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
