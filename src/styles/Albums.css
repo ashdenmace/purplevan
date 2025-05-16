@@ -59,13 +59,13 @@
     color: rgb(45, 0, 82);
 }
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .albums-page-title h2 {
         font-size: 1.3rem;
     }
-    
+
     .albums-page-title p {
         font-size: 1rem;
     }
-    
-  }
+
+}

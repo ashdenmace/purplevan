@@ -19,12 +19,12 @@
   }
 
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-    }
-
-    .nav-route {
-        font-size: 1rem;
-        margin: 0.1rem;
-    }
+  .nav-container {
+      flex-direction: column;
   }
+
+  .nav-route {
+      font-size: 1rem;
+      margin: 0.1rem;
+  }
+}

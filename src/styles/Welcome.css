@@ -128,12 +128,13 @@
 
 
 @media (max-width: 768px) {
+
   .about-section {
     flex-direction: column;
   }
 
   .about-photo-container {
-    order: 1; /* Optional but helpful if needed */
+    order: 1;
     padding: 1rem 0;
   }
 
@@ -148,6 +149,7 @@
   .te-photo-container {
     display: none;
   }
+
   .about-photo-container {
     display: block !important;
     visibility: visible !important;
@@ -155,4 +157,30 @@
     height: auto !important;
     min-height: 200px;
   }
+
+  .image-slider {
+    /* ensure the slider has room on mobile */
+    display: block !important;
+    height: auto !important;
+    min-height: 200px;
+  }
+
+  .image-slider img {
+    /* clamp the image to container */
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+    object-fit: contain;
+  }
 }
+
+
+
+  /* .about-photo-container {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  min-height: 200px;
+} */
