@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import useVanPhotos from "../hooks/useVanPhotos";
 import "../styles/photoshowcase.css";
 
-function PhotoShowcase({ title = "", subtitle = "" }) {
-  const { photos, error, isLoading } = useVanPhotos();
+function PhotoShowcase({ photos, title = "", subtitle = "" }) {
   const [index, setIndex] = useState();
 
   return (

@@ -1,9 +1,11 @@
 import PhotoShowcase from "../components/PhotoShowcase";
+import useVanPhotos from "../hooks/useVanPhotos";
 
 function CelebrationsAlbum() {
+  const { photos } = useVanPhotos("celebrations");
   return (
     <>
-      <PhotoShowcase title="Celebrations" />
+      <PhotoShowcase photos={photos} title="Celebrations" />
     </>
   );
 }

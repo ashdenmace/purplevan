@@ -11,6 +11,15 @@ This is a website showcasing a 1978 VW Van named "Haze". Haze's owner would like
 - A home page showcasing some pictures, including some details about the van and accessories included.
 - Not Found page if a user tries to visit a route that doesn't exist.
 
+## API Documentation
+You can only send GET requests to the API Gateway. Behind that the lambda will access the S3 bucket, create and send back an array of the requested photos in object form.
+
+Photo Object Example: { src: "examplelink", key: file_name }
+ 
+- /current - GET Request to /current will send back an array of current photos of Haze.
+- /before - GET Request to /before will send back an array of before and during the autowork photos of Haze.
+- /celebrations - GET Request to /celebrations will send back an array of photos of the van decorated during celebrations.
+
 ## Technology Used
 - React and Vite
 - Javascript

@@ -5,6 +5,12 @@ import "../styles/Albums.css";
 function Albums() {
   const albums = [
     {
+      title: "Celebrations",
+      image:
+        "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1607841040721.jpg",
+      link: "/celebrations",
+    },
+    {
       title: "Current",
       image:
         "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20191008_121804.jpg",
@@ -15,18 +21,6 @@ function Albums() {
       image:
         "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20190711_125813.jpg",
       link: "/auto-work",
-    },
-    {
-      title: "Celebrations",
-      image:
-        "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1607841040721.jpg",
-      link: "/celebrations",
-    },
-    {
-      title: "All Photos",
-      image:
-        "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1720133851098.jpg",
-      link: "/photos",
     },
   ];
 
