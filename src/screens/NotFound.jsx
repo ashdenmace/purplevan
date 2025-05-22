@@ -15,7 +15,7 @@ function NotFound() {
       </Link>
       <img
         className="not-found-image"
-        src="https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1720133851098.jpg"
+        src="https://purplevan-photos.s3.us-east-1.amazonaws.com/current%2FFB_IMG_1720133851098.jpg"
         alt="Purple Haze the Van"
       />
     </div>

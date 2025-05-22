@@ -7,7 +7,7 @@ function Albums() {
     {
       title: "Celebrations",
       image:
-      "https://purplevan-photos.s3.us-east-1.amazonaws.com/celebrations%2F20230704_083846.jpg",
+      "https://purplevan-photos.s3.us-east-1.amazonaws.com/celebrations%2F1000010786.jpg",
       link: "/celebrations",
     },
     {
