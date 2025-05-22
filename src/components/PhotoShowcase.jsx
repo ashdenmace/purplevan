@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import "../styles/photoshowcase.css";
+import "../styles/PhotoShowcase.css";
 
 function PhotoShowcase({ photos, title = "", subtitle = "" }) {
   const [index, setIndex] = useState();
