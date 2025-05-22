@@ -32,9 +32,8 @@ function ContactForm() {
     setError(null);
 
     emailjs
-    //ENV THESE THREE STRINGS;
-      .send("service_euwr4wd", "template_mlglzz8", form, {
-        publicKey: "fi_CJNSdN-R_m6tOb",
+      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, {
+        publicKey: EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -52,7 +51,6 @@ function ContactForm() {
       );
   };
 
-  // hazevw1976t2@gmail.com
   return (
     <>
       <div className="contactform">
