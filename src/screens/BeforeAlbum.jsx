@@ -1,5 +1,5 @@
 import PhotoShowcase from "../components/PhotoShowcase";
-import useVanPhotos from "../hooks/useVanPhotos";
+import { useVanPhotos } from "../hooks/useVanPhotos";
 
 function BeforeAlbum() {
   const { photos } = useVanPhotos("before");

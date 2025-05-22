@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // FOR DEPLOY MAKE SURE TO SET THIS UP IN SECRET ENVIRONMENT // 
 
-export default function useVanPhotos( route = "photos" ) {
+export function useVanPhotos( route = "photos" ) {
   const [photos, setPhotos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -22,7 +22,7 @@ export default function useVanPhotos( route = "photos" ) {
       }
     };
     loadPhotos();
-  }, []);
+  }, [route]);
 
   return { photos, isLoading, error };
 };

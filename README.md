@@ -23,7 +23,7 @@ Photo Object Example: { src: "examplelink", key: file_name }
 ## Technology Used
 - React and Vite
 - Javascript
-- CSS (little bit of bootstrap)
+- CSS (and a little bit of bootstrap)
 - Node.js
 - Amazon S3
 - Amazon Lambda
