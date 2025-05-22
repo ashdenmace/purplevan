@@ -32,8 +32,8 @@ function ContactForm() {
     setError(null);
 
     emailjs
-      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, {
-        publicKey: EMAILJS_PUBLIC_KEY,
+      .send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, form, {
+        publicKey: process.env.EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
