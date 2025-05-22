@@ -32,8 +32,8 @@ function ContactForm() {
     setError(null);
 
     emailjs
-      .send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, form, {
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
+      .send(import.meta.env.VITE_EMAILJS_SERVICE_ID,  import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form, {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -82,7 +82,7 @@ function ContactForm() {
               id="mobile"
               placeholder="Phone Number (optional)"
               onChange={handleChange}
-              value={form.phoneNumber}
+              value={form.mobile}
             />
           </div>
           <div className="mb-3">
