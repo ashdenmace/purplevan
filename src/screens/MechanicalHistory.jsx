@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../styles/MechanicalHistory.css";
 
-// IMPORTANT: MAKE SURE PICTURE DOESNT LEAK ABOVE NAVBAR BEFORE DEPLOY
-
 const images = [
-  "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20190925_133630.jpg",
-  "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20190925_133729.jpg",
-  // Add more image URLs as needed
+  "https://purplevan-photos.s3.us-east-1.amazonaws.com/before%2F20190925_133729.jpg",
+  "https://purplevan-photos.s3.us-east-1.amazonaws.com/before%2F20190701_123718.jpg",
+  "https://purplevan-photos.s3.us-east-1.amazonaws.com/before%2F20190925_133927.jpg",
 ];
 
 function MechanicalHistory() {

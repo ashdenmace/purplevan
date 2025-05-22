@@ -7,19 +7,19 @@ function Albums() {
     {
       title: "Celebrations",
       image:
-        "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2FFB_IMG_1607841040721.jpg",
+      "https://purplevan-photos.s3.us-east-1.amazonaws.com/celebrations%2F20230704_083846.jpg",
       link: "/celebrations",
     },
     {
       title: "Current",
       image:
-        "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20191008_121804.jpg",
+      "https://purplevan-photos.s3.us-east-1.amazonaws.com/current%2F20191008_121804.jpg",
       link: "/current",
     },
     {
       title: "Before / Auto Work",
       image:
-        "https://purplevan-photos.s3.us-east-1.amazonaws.com/hazevan-photos%2F20190711_125813.jpg",
+      "https://purplevan-photos.s3.us-east-1.amazonaws.com/before%2F20190711_125813.jpg",
       link: "/auto-work",
     },
   ];

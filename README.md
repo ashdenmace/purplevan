@@ -1,5 +1,5 @@
 # React Website for VW Van Sale
-This is a website showcasing a 1978 VW Van named "Haze". Haze's owner would like to sell their van and wanted a website with all the details and photos on it.
+This is a website showcasing a 1976 VW T2 Van named "Haze". Haze's owner would like to sell their van and wanted a website with all the details and photos on it.
 
 ## Features
 - A contact page that features a form that will format and send an email to the owner's inbox using EmailJS. This is intended for users to express their interest in purchasing the van. 
